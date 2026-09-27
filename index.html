@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- ==================== TEMEL SEO ==================== -->
+    <title>NovaCodex v1.0 IDE - Web Tabanlı Kod Editörü & IDE</title>
+    <meta name="description" content="NovaCodex IDE; C++, HTML, CSS, JS ve Python kodlarınızı tarayıcı üzerinden kolayca yazıp çalıştırabileceğiniz modern bir IDE.">
+    <meta name="keywords" content="NovaCodex, FiviGO Studio, IDE, Online Editor, C++ Editor, Web IDE, Code Editor, Online Compiler, Web Tabanlı Kod Editörü, Python Editor, JavaScript Editor, HTML CSS Editor, Monaco Editor, Ücretsiz IDE, Yusuf Alperen İZİ">
+    <meta name="author" content="FiviGO Studio - Yusuf Alperen İZİ">
+    <meta name="generator" content="NovaCodex v1.0 IDE">
+    <meta name="application-name" content="NovaCodex">
+    <meta name="theme-color" content="#007acc">
+    <meta name="color-scheme" content="dark light">
+    <meta name="hosting-provider" content="Netlify">
+    <meta http-equiv="content-language" content="tr">
+    <meta name="language" content="Turkish">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="canonical" href="https://novacodex-ide.netlify.app/">
+
+    <!-- ==================== ARAMA MOTORU DİZİNLEME ==================== -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="coverage" content="worldwide">
+    <meta name="target" content="all">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="google-site-verification" content="1ASmjHO89y8QBgxUTBmbzKjAw1-oZ4o98FnmqIKi2Zw" />
+    <meta name="yandex-verification" content="09ca571fd529f7f3" />
+
+    <!-- ==================== OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ==================== -->
+    <meta property="og:title" content="NovaCodex v1.0 IDE - Web Tabanlı Kod Editörü">
+    <meta property="og:description" content="Tarayıcıda hızlı, güçlü ve hafif kod editörü deneyimi. C++, Python, HTML, CSS ve JS kodlarını anında çalıştır.">
+    <meta property="og:image" content="https://novacodex-ide.netlify.app/görsel.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="NovaCodex v1.0 IDE Önizleme">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://novacodex-ide.netlify.app/">
+    <meta property="og:site_name" content="NovaCodex IDE">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- ==================== TWITTER / X KARTI ==================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NovaCodex v1.0 IDE - Web Tabanlı Kod Editörü">
+    <meta name="twitter:description" content="Tarayıcıda hızlı, güçlü ve hafif kod editörü deneyimi.">
+    <meta name="twitter:image" content="https://novacodex-ide.netlify.app/görsel.png">
+    <meta name="twitter:image:alt" content="NovaCodex v1.0 IDE Önizleme">
+
+    <!-- ==================== FAVICON & SİMGELER ==================== -->
+    <link rel="icon" type="image/png" href="görsel.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="görsel.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="görsel.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="görsel.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="görsel.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="görsel.png">
+    <link rel="shortcut icon" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="görsel.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="görsel.png">
+    <link rel="mask-icon" href="görsel.png" color="#007acc">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- ==================== PWA / MOBİL UYGULAMA DAVRANIŞI ==================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="NovaCodex">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="#007acc">
+    <meta name="msapplication-TileImage" content="görsel.png">
+    <meta name="msapplication-config" content="none">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- ==================== YAPILANDIRILMIŞ VERİ (Google Zengin Sonuçlar) ==================== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "NovaCodex v1.0 IDE",
+        "alternateName": "NovaCodex",
+        "url": "https://novacodex-ide.netlify.app/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web (Tüm Tarayıcılar)",
+        "description": "NovaCodex IDE; C++, HTML, CSS, JS ve Python kodlarınızı tarayıcı üzerinden kolayca yazıp çalıştırabileceğiniz modern bir IDE.",
+        "image": "https://novacodex-ide.netlify.app/görsel.png",
+        "inLanguage": "tr",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "TRY"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "FiviGO Studio",
+            "founder": {
+                "@type": "Person",
+                "name": "Yusuf Alperen İZİ"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "FiviGO Studio"
+        }
+    }
+    </script>
+
+    <!-- Monaco Editor v0.45.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #121215;
+            --bg-secondary: #18181c;
+            --bg-header: #1f1f24;
+            --bg-card: #26262e;
+            --text-color: #f1f1f5;
+            --text-muted: #9393a2;
+            --border-color: #2e2e38;
+            --active-tab: #121215;
+            --inactive-tab: #1f1f24;
+            --accent-color: #007acc;
+            --accent-hover: #0062a3;
+            --sidebar-width: 320px;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .light-theme {
+            --bg-primary: #f8f9fa; --bg-secondary: #ffffff; --bg-header: #f1f3f5;
+            --bg-card: #e9ecef; --text-color: #212529; --text-muted: #6c757d;
+            --border-color: #dee2e6; --active-tab: #f8f9fa; --inactive-tab: #e9ecef;
+            --accent-color: #007acc;
+        }
+        .theme-cyberpunk { --bg-primary: #0d0221; --bg-secondary: #19053d; --bg-header: #26095c; --bg-card: #2f0d70; --text-color: #00f0ff; --text-muted: #ff007f; --border-color: #ff007f; --accent-color: #ff007f; }
+        .theme-dracula { --bg-primary: #282a36; --bg-secondary: #44475a; --bg-header: #21222c; --bg-card: #6272a4; --text-color: #f8f8f2; --text-muted: #bd93f9; --border-color: #6272a4; --accent-color: #ff79c6; }
+        .theme-synthwave { --bg-primary: #1a0933; --bg-secondary: #240a4a; --bg-header: #2d0b5e; --bg-card: #3a1375; --text-color: #ff71ce; --text-muted: #01cdfe; --border-color: #05ffa1; --accent-color: #ff71ce; }
+        .theme-matrix { --bg-primary: #020d04; --bg-secondary: #051a09; --bg-header: #08260e; --bg-card: #0d3815; --text-color: #00ff41; --text-muted: #008f11; --border-color: #00ff41; --accent-color: #00ff41; }
+        .theme-nord { --bg-primary: #2e3440; --bg-secondary: #3b4252; --bg-header: #434c5e; --bg-card: #4c566a; --text-color: #eceff4; --text-muted: #d8dee9; --border-color: #88c0d0; --accent-color: #88c0d0; }
+        .theme-monokai { --bg-primary: #272822; --bg-secondary: #1e1f1c; --bg-header: #3e3d32; --bg-card: #49483e; --text-color: #f8f8f2; --text-muted: #75715e; --border-color: #a6e22e; --accent-color: #f92672; }
+        .theme-solarized { --bg-primary: #002b36; --bg-secondary: #073642; --bg-header: #094352; --bg-card: #0e5264; --text-color: #839496; --text-muted: #586e75; --border-color: #2aa198; --accent-color: #b58900; }
+        .theme-tokyonight { --bg-primary: #1a1b26; --bg-secondary: #16161e; --bg-header: #1f2335; --bg-card: #24283b; --text-color: #a9b1d6; --text-muted: #565f89; --border-color: #7aa2f7; --accent-color: #bb9af7; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body, .default-cursor {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex; flex-direction: column; height: 100vh;
+            background-color: var(--bg-primary); color: var(--text-color);
+            overflow: hidden; transition: background 0.3s ease, color 0.3s ease;
+            cursor: default;
+        }
+        a, button, .clickable, input[type="button"], input[type="submit"], select, .tab,
+        .sidebar-link, .explorer-file, .close-tab, .add-tab-btn, .template-card,
+        .cursor-card, .market-tab-btn { cursor: pointer !important; position: relative; overflow: hidden; }
+        input[type="text"], input[type="search"], input[type="number"], textarea,
+        .editor-area, [contenteditable="true"], .monaco-editor { cursor: text !important; }
+        .busy, .busy * { cursor: wait !important; }
+        .divider, .resizer-x { cursor: ew-resize !important; }
+        .resizer-y { cursor: ns-resize !important; }
+        #splash-screen {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background-color: #09090b; z-index: 10000; display: flex;
+            justify-content: center; align-items: center; flex-direction: column; gap: 20px;
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
+        }
+        .splash-content {
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 15px; animation: splashFadeIn 1s ease-out forwards;
+        }
+        .blue-orb {
+            width: 80px; height: 80px; border-radius: 50%;
+            background: radial-gradient(circle, #00d2ff 0%, #007acc 70%, transparent 100%);
+            box-shadow: 0 0 50px #00d2ff, 0 0 100px #007acc;
+            animation: pulseOrb 1.5s infinite alternate ease-in-out;
+        }
+        .cyber-line-loader {
+            width: 100px; height: 100px; border: 3px solid transparent;
+            border-top: 3px solid #ff007f; border-right: 3px solid #00d2ff;
+            border-radius: 50%; animation: spinCyber 1s linear infinite;
+        }
+        .matrix-rain {
+            width: 80px; height: 80px; background: #000; border: 2px solid #00ff41;
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            color: #00ff41; font-weight: bold; font-family: monospace;
+            box-shadow: 0 0 25px rgba(0,255,65,0.5); animation: pulseOrb 1s infinite alternate;
+        }
+        .cosmic-portal {
+            width: 80px; height: 80px; border-radius: 50%;
+            background: conic-gradient(from 0deg, #ff007f, #7928ca, #00d2ff, #ff007f);
+            animation: spinCyber 2s linear infinite, pulseOrb 1.5s infinite alternate;
+            box-shadow: 0 0 35px #7928ca;
+        }
+        @keyframes spinCyber { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .splash-title {
+            font-size: 1.8rem; font-weight: 900; letter-spacing: 1px;
+            background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+        }
+        .splash-loader-bar { width: 200px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; }
+        .splash-loader-progress {
+            width: 0%; height: 100%; background: linear-gradient(90deg, #007acc, #00d2ff);
+            border-radius: 4px; animation: loadProgress 1.6s ease-in-out forwards;
+        }
+        @keyframes splashFadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes pulseOrb {
+            0% { transform: scale(0.85); box-shadow: 0 0 20px #00d2ff; }
+            100% { transform: scale(1.15); box-shadow: 0 0 70px #00d2ff, 0 0 120px #007acc; }
+        }
+        @keyframes loadProgress { 0% { width: 0%; } 50% { width: 65%; } 100% { width: 100%; } }
+        button, .sidebar-link, .project-card, .template-card, .cursor-card {
+            transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        }
+        button:active { transform: scale(0.96) !important; }
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.75); backdrop-filter: blur(8px);
+            display: none; justify-content: center; align-items: center; z-index: 2000;
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .modal-overlay[style*="display: flex"] { opacity: 1; }
+        .modal-card {
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: var(--radius-md); width: 720px; max-width: 94%; padding: 25px;
+            display: flex; flex-direction: column; gap: 16px; box-shadow: var(--shadow-lg);
+            transform: translateY(20px) scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .modal-overlay[style*="display: flex"] .modal-card { transform: translateY(0) scale(1); }
+        @keyframes modalBurstIn {
+            0%   { clip-path: circle(0% at 50% 50%); opacity: 0; transform: scale(0.55); box-shadow: 0 0 0px rgba(0,210,255,0); }
+            45%  { opacity: 1; box-shadow: 0 0 70px rgba(0,210,255,0.65); }
+            100% { clip-path: circle(150% at 50% 50%); opacity: 1; transform: scale(1); box-shadow: var(--shadow-lg); }
+        }
+        .modal-card.burst-modal {
+            transition: none !important;
+            animation: modalBurstIn 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .modal-title {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 1rem; font-weight: 700; color: var(--text-color);
+            border-bottom: 1px solid var(--border-color); padding-bottom: 12px;
+        }
+        .modal-title span:last-child {
+            cursor: pointer; font-size: 1.3rem; color: var(--text-muted);
+            padding: 0 4px; border-radius: 4px; transition: color 0.2s;
+        }
+        .modal-title span:last-child:hover { color: #ff5f56; }
+        header {
+            background-color: var(--bg-header); padding: 0 16px; font-size: 0.9rem;
+            font-weight: 600; border-bottom: 1px solid var(--border-color);
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 100; user-select: none; height: 44px; backdrop-filter: blur(8px);
+        }
+        .header-left { display: flex; align-items: center; gap: 14px; }
+        .menu-btn, .gear-btn {
+            background: none; border: none; color: var(--text-color);
+            font-size: 1.1rem; padding: 6px 10px; border-radius: var(--radius-sm);
+            transition: all 0.2s ease;
+        }
+        .menu-btn:hover, .gear-btn:hover { background-color: var(--bg-card); transform: rotate(15deg); }
+        .brand-logo-container { display: flex; align-items: center; gap: 8px; }
+        .brand-name {
+            font-size: 1.15rem; font-weight: 800; letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .brand-badge {
+            font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+            background: rgba(0,122,204,0.2); color: #00d2ff;
+            border: 1px solid rgba(0,210,255,0.3); padding: 2px 6px;
+            border-radius: 4px; letter-spacing: 0.5px;
+            animation: pulseBadge 2s infinite ease-in-out;
+        }
+        @keyframes pulseBadge {
+            0%, 100% { border-color: rgba(0,210,255,0.3); }
+            50% { border-color: rgba(0,210,255,0.8); box-shadow: 0 0 8px rgba(0,210,255,0.4); }
+        }
+        .coin-badge {
+            display: flex; align-items: center; gap: 5px;
+            background: rgba(241,196,15,0.15); color: #f1c40f;
+            border: 1px solid rgba(241,196,15,0.3); padding: 4px 10px;
+            border-radius: 20px; font-size: 0.8rem; font-weight: 700; transition: transform 0.2s;
+        }
+        .coin-badge:hover { transform: scale(1.05); }
+        .fivi-notification {
+            position: fixed; top: 54px; right: 20px; z-index: 9999;
+            background: rgba(24,24,28,0.95); border: 1px solid var(--accent-color);
+            border-left: 4px solid #00d2ff; padding: 12px 18px; border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-lg); backdrop-filter: blur(10px);
+            display: flex; align-items: center; gap: 12px;
+            transform: translateX(120%); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .fivi-notification.show { transform: translateX(0); }
+        .fivi-notif-title { font-weight: 700; font-size: 0.82rem; color: #00d2ff; display: block; margin-bottom: 2px; }
+        .fivi-notif-text { font-size: 0.8rem; color: var(--text-color); }
+        .btn-run {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white; border: none; padding: 4px 14px; border-radius: var(--radius-sm);
+            font-size: 0.8rem; font-weight: 700; display: inline-flex; align-items: center;
+            gap: 6px; box-shadow: 0 2px 8px rgba(39,174,96,0.3);
+        }
+        .btn-run:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(39,174,96,0.6); }
+        .tabs-bar-wrapper {
+            display: flex; background-color: var(--bg-header);
+            border-bottom: 1px solid var(--border-color); align-items: center; overflow: hidden; height: 38px;
+        }
+        .tabs-container { display: flex; overflow-x: auto; flex: 1; height: 100%; scrollbar-width: none; }
+        .tabs-container::-webkit-scrollbar { display: none; }
+        .tab {
+            background-color: var(--inactive-tab); padding: 0 14px;
+            border-right: 1px solid var(--border-color); display: flex; align-items: center;
+            gap: 8px; font-size: 0.82rem; user-select: none; height: 100%;
+            min-width: 120px; max-width: 200px; color: var(--text-muted);
+        }
+        .tab:hover { background-color: var(--bg-card); color: var(--text-color); }
+        .tab.active { background-color: var(--active-tab); color: var(--text-color); border-top: 2px solid var(--accent-color); font-weight: 500; }
+        .tab-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .close-tab { font-size: 14px; opacity: 0.6; padding: 2px 5px; border-radius: 50%; }
+        .close-tab:hover { opacity: 1; background-color: rgba(255,95,86,0.2); color: #ff5f56; }
+        .add-tab-btn { background: none; border: none; color: var(--text-color); padding: 0 14px; height: 100%; font-size: 1.2rem; opacity: 0.7; }
+        .add-tab-btn:hover { opacity: 1; background-color: var(--bg-card); }
+        .sidebar {
+            position: absolute; top: 44px; left: calc(-1 * var(--sidebar-width));
+            width: var(--sidebar-width); height: calc(100vh - 44px);
+            background-color: var(--bg-header); border-right: 1px solid var(--border-color);
+            transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1000;
+            padding: 15px 10px; display: flex; flex-direction: column; gap: 6px;
+            overflow-y: auto; box-shadow: var(--shadow-lg);
+        }
+        .sidebar.open { left: 0; }
+        .sidebar-title { font-size: 0.7rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px; padding: 10px 10px 4px 10px; font-weight: 700; }
+        .sidebar-link { padding: 8px 12px; border-radius: var(--radius-sm); color: var(--text-color); font-size: 0.85rem; display: flex; align-items: center; gap: 10px; }
+        .sidebar-link:hover { background-color: var(--bg-card); transform: translateX(4px); }
+        .sidebar-link.active { background-color: var(--accent-color) !important; color: white !important; font-weight: 600; }
+        .sidebar-lofi-panel {
+            margin-top: auto; background: var(--bg-card); border: 1px solid var(--border-color);
+            border-radius: var(--radius-md); padding: 12px; display: flex; flex-direction: column; gap: 10px;
+        }
+        .settings-panel {
+            position: absolute; top: 44px; right: calc(-1 * var(--sidebar-width));
+            width: var(--sidebar-width); height: calc(100vh - 44px);
+            background-color: var(--bg-header); border-left: 1px solid var(--border-color);
+            transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1000;
+            padding: 18px 15px; display: flex; flex-direction: column; gap: 18px;
+            overflow-y: auto; box-shadow: var(--shadow-lg);
+        }
+        .settings-panel.open { right: 0; }
+        .settings-group {
+            background-color: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: var(--radius-md); padding: 12px 14px; display: flex; flex-direction: column; gap: 10px;
+        }
+        .settings-group-title { font-size: 0.75rem; font-weight: 700; color: #00d2ff; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; }
+        .setting-item { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; }
+        .mode-status-badge {
+            background: rgba(0,210,255,0.15); color: #00d2ff; border: 1px solid rgba(0,210,255,0.3);
+            padding: 3px 8px; border-radius: 12px; font-size: 0.72rem; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;
+        }
+        .settings-select, .settings-input-num {
+            background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-color);
+            padding: 5px 8px; border-radius: var(--radius-sm); font-size: 0.8rem; outline: none;
+        }
+        .toggle-switch { position: relative; width: 38px; height: 20px; display: inline-block; }
+        .toggle-switch input { opacity: 0; width: 0; height: 0; }
+        .slider-round {
+            position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
+            background-color: var(--bg-card); transition: .2s; border-radius: 20px; border: 1px solid var(--border-color);
+        }
+        .slider-round:before {
+            position: absolute; content: ""; height: 14px; width: 14px; left: 2px; bottom: 2px;
+            background-color: var(--text-muted); transition: .2s; border-radius: 50%;
+        }
+        input:checked + .slider-round { background-color: var(--accent-color); }
+        input:checked + .slider-round:before { transform: translateX(18px); background-color: white; }
+        .container { display: flex; flex: 1; overflow: hidden; position: relative; }
+        .view-section { animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+        .panel { flex: 1; display: flex; flex-direction: column; overflow: hidden; min-width: 150px; }
+        .panel-title {
+            background-color: var(--bg-secondary); padding: 6px 14px; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; font-weight: 600; height: 34px;
+        }
+        #editor-container { flex: 1; width: 100%; height: 100%; }
+        .preview-wrapper { flex: 1; display: flex; justify-content: center; background-color: #ffffff; overflow: hidden; position: relative; }
+        iframe { width: 100%; height: 100%; background-color: #ffffff; border: none; transition: width 0.3s ease; }
+        .console-panel {
+            height: 140px; background-color: #0b0b0d; border-top: 1px solid var(--border-color);
+            display: flex; flex-direction: column; font-family: 'Fira Code', 'Consolas', monospace; font-size: 0.8rem;
+        }
+        .console-header { background: var(--bg-secondary); padding: 6px 12px; font-size: 0.72rem; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
+        .console-logs { flex: 1; padding: 10px; overflow-y: auto; display: flex; flex-direction: column; gap: 4px; white-space: pre-wrap; }
+        .log-item { padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; animation: fadeIn 0.2s ease; }
+        .log-info { color: #4ec9b0; }
+        .log-system { color: #ce9178; }
+        .divider { width: 5px; background-color: var(--border-color); transition: background 0.2s; }
+        .divider:hover { background-color: var(--accent-color); }
+        #home-view { flex: 1; padding: 30px; overflow-y: auto; background-color: var(--bg-primary); display: flex; flex-direction: column; gap: 25px; }
+        .home-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .project-card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 15px; }
+        .project-card:hover { transform: translateY(-4px); border-color: var(--accent-color); box-shadow: var(--shadow-lg); }
+        .changelog-section { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px; display: flex; flex-direction: column; gap: 15px; }
+        .changelog-title { font-size: 1.1rem; font-weight: 800; color: #00d2ff; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+        .changelog-list { display: flex; flex-direction: column; gap: 12px; }
+        .changelog-item { background: var(--bg-card); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-color); padding: 12px 16px; border-radius: var(--radius-sm); display: flex; flex-direction: column; gap: 6px; }
+        .changelog-item-header { display: flex; justify-content: space-between; align-items: center; }
+        .changelog-version { font-weight: 700; font-size: 0.9rem; color: #00d2ff; }
+        .changelog-date { font-size: 0.75rem; color: var(--text-muted); }
+        .changelog-desc { font-size: 0.82rem; color: var(--text-color); line-height: 1.4; }
+        .modal-input { width: 100%; padding: 10px 14px; background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-color); border-radius: var(--radius-sm); outline: none; font-size: 0.9rem; transition: border 0.2s; }
+        .modal-input:focus { border-color: var(--accent-color); box-shadow: 0 0 8px rgba(0,122,204,0.3); }
+        .market-layout { display: flex; gap: 15px; height: 440px; }
+        .market-tabs { width: 170px; display: flex; flex-direction: column; gap: 6px; border-right: 1px solid var(--border-color); padding-right: 10px; }
+        .market-tab-btn { background: var(--bg-card); color: var(--text-color); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--radius-sm); text-align: left; font-size: 0.82rem; font-weight: 600; }
+        .market-tab-btn.active, .market-tab-btn:hover { background: var(--accent-color); color: white; border-color: var(--accent-color); }
+        .market-content { flex: 1; overflow-y: auto; padding-right: 5px; }
+        .template-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .template-card { background: var(--bg-card); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); }
+        .template-card:hover { border-color: #00d2ff; transform: translateY(-2px); }
+        .cursor-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 12px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; }
+        .cursor-card:hover { border-color: #00d2ff; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,210,255,0.15); }
+        .cursor-card.equipped { border-color: #2ecc71; background: rgba(46,204,113,0.08); }
+        .drop-zone { border: 2px dashed var(--accent-color); padding: 30px; text-align: center; border-radius: var(--radius-sm); background: rgba(0,122,204,0.05); }
+        .drop-zone:hover { background: rgba(0,122,204,0.15); }
+        button {
+            background-color: var(--accent-color); color: white; border: none;
+            padding: 8px 16px; border-radius: var(--radius-sm); font-size: 0.85rem;
+            display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-weight: 500;
+        }
+        button:hover { background-color: var(--accent-hover); transform: translateY(-1px); }
+        footer { background-color: var(--accent-color); color: white; padding: 4px 15px; font-size: 0.75rem; display: flex; justify-content: space-between; z-index: 100; user-select: none; font-weight: 500; }
+        .autosave-tag { background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; }
+        .explorer { width: 240px; min-width: 180px; background: var(--bg-header); border-right: 1px solid var(--border-color); display: none; flex-direction: column; overflow: hidden; }
+        .explorer.open { display: flex; animation: fadeIn 0.2s; }
+        .explorer-header { padding: 8px 12px; font-size: .72rem; color: var(--text-muted); border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; font-weight: 600; }
+        .explorer-list { padding: 8px; overflow: auto; }
+        .explorer-file { padding: 6px 10px; border-radius: var(--radius-sm); display: flex; gap: 8px; align-items: center; font-size: .8rem; color: var(--text-color); }
+        .explorer-file:hover, .explorer-file.active { background: var(--accent-color); color: white; }
+        .terminal-panel { position: fixed; left: 12px; right: 12px; bottom: 38px; height: 240px; z-index: 2300; display: none; flex-direction: column; background: #09090b; border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: var(--shadow-lg); overflow: hidden; }
+        .terminal-panel.open { display: flex; animation: fadeIn 0.2s; }
+        .terminal-head { padding: 8px 12px; background: #141417; color: var(--text-muted); display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 600; }
+        .terminal-output { flex: 1; padding: 10px; overflow: auto; font: 13px 'Fira Code', Consolas, monospace; white-space: pre-wrap; color: #e1e1e6; }
+        .terminal-line { display: flex; border-top: 1px solid #1f1f24; background: #09090b; }
+        .terminal-line span { padding: 8px 10px; color: #27ae60; font-family: monospace; font-weight: bold; }
+        .terminal-line input { flex: 1; background: transparent; border: 0; outline: 0; color: #fff; font: 13px Consolas, monospace; padding: 8px 0; }
+    </style>
+</head>
+<body>
+    <audio id="lofi-player" loop></audio>
+    <div id="youtube-lofi-container" style="display:none; position:absolute; width:1px; height:1px; overflow:hidden;"></div>
+    
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-content" id="splash-content-container">
+            <div id="splash-anim-wrapper"><div class="blue-orb" id="splash-anim-element"></div></div>
+            <div class="splash-title">NovaCodex v1.0</div>
+            <div class="splash-loader-bar"><div class="splash-loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Bildirim Balonu -->
+    <div class="fivi-notification" id="fivi-notif">
+        <span style="font-size: 1.4rem;" id="fivi-notif-icon">🚀</span>
+        <div>
+            <span class="fivi-notif-title" id="fivi-notif-title">NovaCodex</span>
+            <span class="fivi-notif-text" id="fivi-notif-text">NovaCodex v1.0 IDE'ye Hoş Geldiniz!</span>
+        </div>
+    </div>
+
+    <!-- Header / Üst Bar -->
+    <header>
+        <div class="header-left">
+            <button class="menu-btn" onclick="toggleSidebar()" title="Menü">⋮≡</button>
+            <div class="brand-logo-container">
+                <span class="brand-name">NovaCodex</span>
+                <span class="brand-badge">v1.0 IDE</span>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <div class="coin-badge">🪙 <span id="user-kodcoin">0</span> KC</div>
+            <button class="gear-btn" onclick="toggleSettingsPanel()" title="Ayarlar">⚙️</button>
+        </div>
+    </header>
+
+    <!-- Yan Menü (Sidebar) -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-link" id="nav-dashboard" onclick="changeMode('dashboard')">🏠 Ana Sayfa & Projeler</div>
+        <div class="sidebar-link active" id="nav-editor" onclick="changeMode('editor')">💻 Kod Editörü</div>
+        
+        <div class="sidebar-title">EKLENTİLER & MAĞAZA</div>
+        <div class="sidebar-link" onclick="openMarketModal()">🛒 Market (Eşya Mağazası)</div>
+        <div class="sidebar-link" onclick="openModal('earn-modal')">🎯 KodCoin Kazan</div>
+        <button onclick="claimDailyReward()" id="daily-reward-btn" style="background: linear-gradient(135deg, #f39c12, #f1c40f); color:#000; font-weight:bold; margin: 4px 0; width:100%; border-radius: var(--radius-sm);">
+            🎁 Günlük Ödül (+50 KC)
+        </button>
+        <div id="daily-reward-timer" style="display:none; font-size:0.68rem; color:var(--text-muted); text-align:center; margin-top:-2px; margin-bottom:2px;"></div>
+        <div class="sidebar-link" onclick="openModal('templates-modal')">⚡ Kod Şablonları</div>
+        
+        <div class="sidebar-title">ARAÇLAR & MODALLAR</div>
+        <div class="sidebar-link" onclick="openNewProjectModal()">➕ Yeni Proje Oluştur</div>
+        <div class="sidebar-link" onclick="openNewTabModal()">📄 Yeni Dosya Ekle</div>
+        <div class="sidebar-link" onclick="openModal('import-export-modal')">📥 / 📤 İç / Dışa Aktar</div>
+        <div class="sidebar-link" onclick="openStatsModal()">📊 Çalışma İstatistikleri</div>
+        <div class="sidebar-link" onclick="toggleExplorer()">🌳 Dosya Gezgini</div>
+        <div class="sidebar-link" onclick="toggleTerminal()">⌨️ Sanal Terminal</div>
+        
+        <div class="sidebar-lofi-panel">
+            <div style="font-size:0.75rem; font-weight:700; color:#00d2ff; display:flex; justify-content:space-between; align-items:center;">
+                <span>📻 ŞARKI / LO-FI ÇALAR</span>
+                <span id="lofi-status-badge" style="font-size:0.65rem; color:var(--text-muted);">Kapalı</span>
+            </div>
+            <input type="text" id="custom-music-url" placeholder="YouTube veya Ses Linki Yapıştır..."
+                   style="width:100%; background:var(--bg-primary); border:1px solid var(--border-color); color:var(--text-color); padding:5px 8px; border-radius:var(--radius-sm); font-size:0.75rem; outline:none;">
+            <button onclick="playCustomMusic()" id="lofi-btn" style="background: linear-gradient(135deg, #9b59b6, #8e44ad); color:#fff; font-weight:bold; width:100%;">
+                ▶️ Şarkıyı Oynat
+            </button>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
+                <span style="font-size:0.7rem; color:var(--text-muted);">Ses:</span>
+                <input type="range" min="0" max="1" step="0.1" value="0.5" style="width: 100%; height: 4px;" onchange="setVolume(this.value)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Ayarlar Paneli -->
+    <div class="settings-panel" id="settings-panel">
+        <div class="sidebar-title" style="padding:0; font-size:0.85rem; display:flex; justify-content:space-between; align-items:center;">
+            <span>⚙️ EDITÖR VE SİSTEM AYARLARI</span>
+            <button onclick="toggleSettingsPanel()" style="background:none; border:none; color:var(--text-muted); font-size:1.1rem; padding:0;">×</button>
+        </div>
+        <div class="settings-group">
+            <div class="settings-group-title">🎨 Görünüm & Tema</div>
+            <div class="setting-item">
+                <span>Aktif Mod:</span>
+                <span class="mode-status-badge" id="theme-mode-badge">🌙 Gece Modu</span>
+            </div>
+            <div class="setting-item">
+                <span>Gece/Gündüz:</span>
+                <button onclick="toggleTheme()" style="padding: 4px 10px; font-size: 0.75rem;">🌗 Modu Değiştir</button>
+            </div>
+            <div class="setting-item" style="margin-top: 4px;">
+                <span>Monaco Şeması:</span>
+                <select class="settings-select" id="monaco-theme-select" onchange="changeMonacoTheme(this.value)">
+                    <option value="vs-dark">Dark Plus (VS Code)</option>
+                    <option value="vs">Light Modern</option>
+                    <option value="hc-black">High Contrast Dark</option>
+                </select>
+            </div>
+        </div>
+        <div class="settings-group">
+            <div class="settings-group-title">💻 Editör Tercihleri</div>
+            <div class="setting-item">
+                <span>Font Boyutu (px):</span>
+                <input type="number" id="setting-fontsize" class="settings-input-num" value="14" min="10" max="28" style="width: 55px;" onchange="updateEditorFontSize(this.value)">
+            </div>
+            <div class="setting-item">
+                <span>Font Ailesi:</span>
+                <select class="settings-select" id="setting-fontfamily" onchange="updateEditorFontFamily(this.value)">
+                    <option value="'Fira Code', monospace">Fira Code</option>
+                    <option value="'Consolas', monospace">Consolas</option>
+                    <option value="'Courier New', monospace">Courier New</option>
+                    <option value="Inter, sans-serif">Inter</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <span>Minimap (Harita):</span>
+                <label class="toggle-switch"><input type="checkbox" id="setting-minimap" checked onchange="toggleMinimap(this.checked)"><span class="slider-round"></span></label>
+            </div>
+            <div class="setting-item">
+                <span>Satır Numaraları:</span>
+                <label class="toggle-switch"><input type="checkbox" id="setting-linenumbers" checked onchange="toggleLineNumbers(this.checked)"><span class="slider-round"></span></label>
+            </div>
+            <div class="setting-item">
+                <span>Satır Kaydırma:</span>
+                <label class="toggle-switch"><input type="checkbox" id="setting-wordwrap" onchange="toggleWordWrap(this.checked)"><span class="slider-round"></span></label>
+            </div>
+            <div class="setting-item">
+                <span>Otomatik Girintileme:</span>
+                <label class="toggle-switch"><input type="checkbox" id="setting-autoindent" checked onchange="toggleAutoIndent(this.checked)"><span class="slider-round"></span></label>
+            </div>
+        </div>
+        <div class="settings-group">
+            <div class="settings-group-title">🛠️ Hızlı Araçlar</div>
+            <button onclick="formatCode()" style="width:100%; background:#8e44ad;">🎨 Kodu Biçimlendir</button>
+            <button onclick="resetAllData()" style="width:100%; background:#c0392b; margin-top:5px;">⚠️ Tüm Verileri Sıfırla</button>
+        </div>
+    </div>
+
+    <!-- Sekme Barı -->
+    <div class="tabs-bar-wrapper" id="tabs-bar-wrapper">
+        <div class="tabs-container" id="tabs-list"></div>
+        <button class="add-tab-btn" onclick="openNewTabModal()" title="Yeni Dosya Ekle">+</button>
+    </div>
+
+    <!-- Ana Konteyner -->
+    <div class="container" id="main-container">
+        <!-- Dosya Gezgini -->
+        <div class="explorer" id="explorer-panel">
+            <div class="explorer-header">
+                <span>📁 DOSYA GEZGİNİ</span>
+                <button onclick="toggleExplorer()" style="background:none;color:var(--text-muted);padding:1px 5px;">×</button>
+            </div>
+            <div class="explorer-list" id="explorer-list"></div>
+        </div>
+
+        <!-- Ana Sayfa Görünümü -->
+        <div id="home-view" class="view-section" style="display:none;">
+            <div class="home-header">
+                <div>
+                    <h2>🚀 Projelerim</h2>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">NovaCodex IDE projelerinizi yönetin.</p>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <button onclick="openModal('import-export-modal')" style="background:var(--bg-card); color:var(--text-color);">📥 İçe / Dışa Aktar</button>
+                    <button onclick="openNewProjectModal()">➕ Yeni Proje</button>
+                </div>
+            </div>
+            <div class="project-grid" id="project-list-grid"></div>
+            <div class="changelog-section">
+                <div class="changelog-title" style="justify-content:space-between;">
+                    <span>📢 Duyurular & Yapılan Güncellemeler</span>
+                    <button onclick="openWhatsNewModal()" style="background: linear-gradient(135deg, #7928ca, #00d2ff); font-size:0.78rem; padding:6px 14px;">✨ Yenilikleri Gör</button>
+                </div>
+                <div class="changelog-list" id="changelog-container"></div>
+            </div>
+        </div>
+
+        <!-- Sol Panel: Editör -->
+        <div class="panel view-section" id="left-panel">
+            <div class="panel-title">
+                <span>KOD EDİTÖRÜ</span>
+                <div style="display:flex; gap:6px;">
+                    <button onclick="formatCode()" style="padding:2px 8px; font-size:0.7rem; background:var(--bg-card); color:var(--text-color);">✨ Düzenle</button>
+                    <button class="btn-run" onclick="runCode()">▶ Run (F5)</button>
+                </div>
+            </div>
+            <div id="editor-container"></div>
+        </div>
+
+        <div class="divider" id="panel-divider"></div>
+
+        <!-- Sağ Panel: Önizleme & Konsol -->
+        <div class="panel view-section" id="right-panel">
+            <div class="panel-title">
+                <span>ÇIKTI VE CANLI ÖNİZLEME</span>
+                <div style="display:flex; gap:4px;">
+                    <button onclick="setPreviewSize('375px')" style="padding:2px 8px; font-size:0.7rem;">📱 Mobil</button>
+                    <button onclick="setPreviewSize('100%')" style="padding:2px 8px; font-size:0.7rem;">💻 Tam Boyut</button>
+                </div>
+            </div>
+            <div class="preview-wrapper"><iframe id="preview-window"></iframe></div>
+            <div class="console-panel" id="console-panel">
+                <div class="console-header">
+                    <span>🐞 SİSTEM GÜNLÜĞÜ</span>
+                    <button onclick="clearConsole()" style="background:none; border:none; color:var(--text-muted);">🧹 Temizle</button>
+                </div>
+                <div class="console-logs" id="console-logs">
+                    <div class="log-item log-system">System: NovaCodex v1.0 IDE Hazır! Monaco Editor v0.45.0 Aktif.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modallar -->
+    <div class="modal-overlay" id="market-modal">
+        <div class="modal-card">
+            <div class="modal-title">
+                <span>🛒 NovaCodex Mağaza & Özelleştirme</span>
+                <span onclick="closeModals()">×</span>
+            </div>
+            <div class="market-layout">
+                <div class="market-tabs">
+                    <button class="market-tab-btn active" onclick="switchMarketCategory('cursors', this)">🖱️ İmleçler (30)</button>
+                    <button class="market-tab-btn" onclick="switchMarketCategory('themes', this)">🎨 Temalar (30)</button>
+                    <button class="market-tab-btn" onclick="switchMarketCategory('splash', this)">🚀 Açılışlar (30)</button>
+                    <button class="market-tab-btn" onclick="switchMarketCategory('lofi', this)">📻 Müzikler (30)</button>
+                </div>
+                <div class="market-content" id="market-content-area"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="earn-modal">
+        <div class="modal-card" style="width:480px; text-align:center;">
+            <div class="modal-title">
+                <span>🎯 KodCoin Kazan</span>
+                <span onclick="closeModals()">×</span>
+            </div>
+            <div style="padding:15px 5px; display:flex; flex-direction:column; align-items:center; gap:14px;">
+                <div style="font-size:3rem;">🎁</div>
+                <h3 style="color:#00d2ff;">Ücretsiz +5 KodCoin Kazan!</h3>
+                <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">
+                    Aşağıdaki reklamı 10 saniye boyunca ekranda tutarak anında <strong>+5 KodCoin</strong> kazanabilirsin.
+                </p>
+                <div id="ad-earn-idle" style="background:var(--bg-card); padding:12px; border-radius:var(--radius-sm); border:1px solid var(--border-color); width:100%;">
+                    <div style="font-size:0.8rem; font-weight:bold; color:#f1c40f; margin-bottom:4px;">Görev: Reklamı 10 Saniye İzle</div>
+                    <div style="font-size:0.75rem; color:var(--text-muted);">Reklam kapandığında ödülünüz otomatik yüklenir.</div>
+                </div>
+                <div id="ad-banner-wrap" style="display:none; flex-direction:column; align-items:center; gap:8px; width:100%;">
+                    <div id="ad-banner-container" style="width:160px; height:300px; background:#000; border-radius:var(--radius-sm); overflow:hidden;"></div>
+                    <div style="font-size:0.85rem; color:var(--text-muted);">Kalan süre: <span id="ad-countdown">10</span> sn</div>
+                </div>
+                <button onclick="executeAdAndEarn()" id="earn-ad-btn" style="width:100%; padding:12px; font-size:1rem; font-weight:bold; background:linear-gradient(135deg, #2ecc71, #27ae60); margin-top:5px;">
+                    🚀 Reklamı Göster & 5 KC Kazan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-card">
+            <div class="modal-title">
+                <span>🚀 Yeni Proje Oluştur</span>
+                <span onclick="closeModals()">×</span>
+            </div>
+            <input type="text" class="modal-input" id="project-name-input" placeholder="Proje Adı">
+            <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:10px;">
+                <button onclick="closeModals()" style="background:var(--bg-card); color:var(--text-color);">İptal</button>
+                <button onclick="createNewProject()">Oluştur</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="file-modal">
+        <div class="modal-card">
+            <div class="modal-title">
+                <span>📄 Yeni Dosya Ekle</span>
+                <span onclick="closeModals()">×</span>
+            </div>
+            <input type="text" class="modal-input" id="file-name-input" placeholder="Dosya Adı (örn: style.css, script.js, main.cpp, app.py)">
+            <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:10px;">
+                <button onclick="closeModals()" style="background:var(--bg-card); color:var(--text-color);">İptal</button>
+                <button onclick="createNewFile()">Ekle</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="templates-modal">
+        <div class="modal-card">
+            <div class="modal-title">
+                <span>⚡ Kod Şablonları</span>
+                <span onclick="closeModals()">×</span>
+            </div>
+            <div class="template-grid">
+                <div class="template-card" onclick="loadTemplate('cpp_game')">
+                    <strong>🎮 Sayı Tahmin (C++)</strong>
+                    <p style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Hazır sayı tahmin oyunu mantığı.</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('web_starter')">
+                    <strong>🌐 HTML5 & CSS Starter</strong>
+                    <p style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Web tasarımları için hazır şablon.</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('python_starter')">
+                    <strong>🐍 Python Starter</strong>
+                    <p style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Temel Python girdi/çıktı şablonu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="import-export-modal">
+        <div class="modal-card">
+            <div class="modal-title">
+                <span>📥 / 📤 Dosya & Proje Yönetimi</span>
+                <span onclick="closeModals()">×</span>
+            </div>
+            <div class="drop-zone" onclick="document.getElementById('file-upload-input').click()">
+                📂 Bilgisayardan Dosya Yükle (Sürükle veya Tıkla)
+                <input type="file" id="file-upload-input" style="display:none;" onchange="handleFileUpload(event)">
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;">
+                <span style="font-size:0.85rem; color:var(--text-muted);">Aktif Projeyi ZIP Olarak İndir:</span>
+                <button onclick="exportProjectZip()" style="background:#27ae60;">📦 ZIP İndir</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="stats-modal">
+        <div class="modal-card">
+            <div class="modal-title">
+                <span>📊 Çalışma İstatistikleri</span>
+                <span onclick="closeModals()">×</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px;" id="stats-content"></div>
+        </div>
+    </div>
+
+    <!-- Yenilikler Modalı (İçten Dışa Açılım Animasyonlu) -->
+    <div class="modal-overlay" id="whatsnew-modal">
+        <div class="modal-card burst-modal" style="width:560px;">
+            <div class="modal-title">
+                <span>✨ NovaCodex'te Yenilikler</span>
+                <span onclick="closeModals()">×</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:12px; max-height:60vh; overflow-y:auto; padding-right:4px;">
+                <div style="background:var(--bg-card); border:1px solid var(--border-color); border-left:4px solid #00d2ff; padding:14px 16px; border-radius:var(--radius-sm);">
+                    <strong style="color:#00d2ff;">🛒 Mağaza & Özelleştirme</strong>
+                    <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Onlarca imleç, tema, açılış animasyonu ve lofi parça KodCoin ile satın alınıp anında uygulanabilir.</p>
+                </div>
+                <div style="background:var(--bg-card); border:1px solid var(--border-color); border-left:4px solid #f1c40f; padding:14px 16px; border-radius:var(--radius-sm);">
+                    <strong style="color:#f1c40f;">🎁 Günlük Ödüller</strong>
+                    <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Her gün giriş yaparak +50 KodCoin kazan, kalan süre butonun altında canlı olarak gösterilir.</p>
+                </div>
+                <div style="background:var(--bg-card); border:1px solid var(--border-color); border-left:4px solid #2ecc71; padding:14px 16px; border-radius:var(--radius-sm);">
+                    <strong style="color:#2ecc71;">⌨️ Sanal Terminal & 🌳 Dosya Gezgini</strong>
+                    <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Projendeki dosyalar arasında hızlıca gezin, terminalden basit komutlar çalıştır.</p>
+                </div>
+                <div style="background:var(--bg-card); border:1px solid var(--border-color); border-left:4px solid #ff79c6; padding:14px 16px; border-radius:var(--radius-sm);">
+                    <strong style="color:#ff79c6;">⚡ Kod Şablonları & 📦 ZIP Dışa Aktarma</strong>
+                    <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Hazır şablonlarla hızlı başla, projeni tek tıkla ZIP olarak indir.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sanal Terminal -->
+    <div class="terminal-panel" id="terminal-panel">
+        <div class="terminal-head">
+            <span>⌘ NovaCodex CLI</span>
+            <button onclick="toggleTerminal()" style="background:none;padding:1px 6px;color:#fff;">×</button>
+        </div>
+        <div class="terminal-output" id="terminal-output">NovaCodex CLI v1.0\n</div>
+        <div class="terminal-line">
+            <span>novacodex&gt;</span>
+            <input id="terminal-input" autocomplete="off" placeholder="komut girin..." onkeypress="handleTerminal(event)">
+        </div>
+    </div>
+
+    <!-- Footer / Alt Bilgi (Credits) -->
+    <footer>
+        <span id="footer-status">NovaCodex v1.0 | Created by FiviGO Studio - Kurucu: Yusuf Alperen İZİ</span>
+        <div style="display:flex; gap:15px; align-items:center;">
+            <span class="autosave-tag" id="autosave-tag">✓ Otomatik Kaydedildi</span>
+            <span id="footer-stats">Satır: 0 | Karakter: 0</span>
+        </div>
+    </footer>
+
+    <!-- JavaScript Mimarisi -->
+    <script>
+        let editor;
+        let isDark = localStorage.getItem('fivigo_dark_mode') !== 'false';
+        let isLofiPlaying = false;
+        let isLofiUnlocked = localStorage.getItem('fivigo_lofi_unlocked') === 'true';
+
+        let adTabOpened = false;
+
+        const CHANGELOG = [
+            {
+                version: "🚀 NovaCodex v1.0 IDE Yayında!", date: "Bugün",
+                desc: "NovaCodex v1.0 resmen yayınlandı! FiviGO Studio altyapısı ve Yusuf Alperen İZİ liderliğinde geliştirilen yeni nesil Web IDE deneyimi sunuyor."
+            },
+            {
+                version: "🛒 Mağaza Güncellemesi", date: "Dün",
+                desc: "Markete tam 120 adet eşya eklendi! İmleçler, Temalar, Açılış Animasyonları ve Lofi Müzikler aktifleştirildi."
+            }
+        ];
+
+        let kodcoin = parseInt(localStorage.getItem('fivigo_kodcoin')) || 0;
+        let lastDailyClaim = parseInt(localStorage.getItem('fivigo_last_daily')) || 0;
+        let ownedCursors = JSON.parse(localStorage.getItem('fivigo_owned_cursors')) || ['default'];
+        let activeCursorId = localStorage.getItem('fivigo_active_cursor') || 'default';
+        let ownedThemes = JSON.parse(localStorage.getItem('fivigo_owned_themes')) || ['default'];
+        let activeThemeId = localStorage.getItem('fivigo_active_theme') || 'default';
+        let ownedSplash = JSON.parse(localStorage.getItem('fivigo_owned_splash')) || ['default'];
+        let activeSplashId = localStorage.getItem('fivigo_active_splash') || 'default';
+        let ownedLofi = JSON.parse(localStorage.getItem('fivigo_owned_lofi')) || ['lofi_1'];
+        let activeLofiId = localStorage.getItem('fivigo_active_lofi') || 'lofi_1';
+
+        // SVG Yardımcı Fonksiyonu
+        function createSvgCursor(color1, color2, shape='pointer') {
+            if (shape === 'cross') {
+                return `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='none' stroke='${encodeURIComponent(color1)}' stroke-width='2'/><line x1='16' y1='2' x2='16' y2='30' stroke='${encodeURIComponent(color2)}' stroke-width='2'/><line x1='2' y1='16' x2='30' y2='16' stroke='${encodeURIComponent(color2)}' stroke-width='2'/></svg>`;
+            } else if (shape === 'orb') {
+                return `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='10' fill='${encodeURIComponent(color1)}' stroke='${encodeURIComponent(color2)}' stroke-width='3'/><circle cx='16' cy='16' r='4' fill='%23ffffff'/></svg>`;
+            } else if (shape === 'sword') {
+                return `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><path fill='${encodeURIComponent(color1)}' stroke='${encodeURIComponent(color2)}' stroke-width='1.5' d='M2,2 L12,8 L8,12 L30,30 L26,30 L6,10 L2,12 Z'/></svg>`;
+            } else {
+                return `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><path fill='${encodeURIComponent(color1)}' stroke='${encodeURIComponent(color2)}' stroke-width='1.5' filter='drop-shadow(0px 0px 4px ${encodeURIComponent(color1)})' d='M4,2 L24,12 L14,16 L10,26 Z'/></svg>`;
+            }
+        }
+
+        const CURSORS = [
+            { id: 'default', name: 'Mavi Neon', price: 0, svg: createSvgCursor('#00d2ff', '#007acc'), hoverSvg: createSvgCursor('#ffffff', '#00d2ff') },
+            { id: 'secret_dragon', name: '🐲 Gizli Ejderha', price: 0, secret: true, svg: createSvgCursor('#e74c3c', '#f1c40f'), hoverSvg: createSvgCursor('#f1c40f', '#e74c3c') },
+            { id: 'crosshair', name: 'Keskin Hedef', price: 150, svg: createSvgCursor('#00d2ff', '#ff007f', 'cross'), hoverSvg: createSvgCursor('#ff007f', '#00d2ff', 'cross') },
+            { id: 'lightning', name: 'Şimşek Yıldırım', price: 200, svg: createSvgCursor('#f1c40f', '#e67e22', 'sword'), hoverSvg: createSvgCursor('#ffffff', '#f1c40f', 'sword') },
+            { id: 'ruby_red', name: 'Yakut Kırmızı', price: 100, svg: createSvgCursor('#e74c3c', '#c0392b'), hoverSvg: createSvgCursor('#ffffff', '#e74c3c') }
+        ];
+
+        const STUDIO_THEMES = [
+            { id: 'default', name: 'Varsayılan Koyu Mod', price: 0, className: '' },
+            { id: 'cyberpunk', name: '💜 Cyberpunk Neon', price: 200, className: 'theme-cyberpunk' },
+            { id: 'dracula', name: '🧛 Dracula Theme', price: 200, className: 'theme-dracula' },
+            { id: 'synthwave', name: '🌆 Synthwave 80s', price: 220, className: 'theme-synthwave' },
+            { id: 'matrix', name: '🟢 Matrix Green', price: 250, className: 'theme-matrix' },
+            { id: 'nord', name: '❄️ Nord Frost', price: 180, className: 'theme-nord' },
+            { id: 'monokai', name: '🍃 Monokai Classic', price: 180, className: 'theme-monokai' },
+            { id: 'solarized', name: '🌻 Solarized Dark', price: 180, className: 'theme-solarized' },
+            { id: 'tokyonight', name: '🌃 Tokyo Night', price: 220, className: 'theme-tokyonight' }
+        ];
+
+        const SPLASH_SCREENS = [
+            { id: 'default', name: '🔵 Mavi Küre (Orb)', price: 0, html: '<div class="blue-orb"></div>' },
+            { id: 'cyberline', name: '✨ Minimal Siber Çizgi', price: 150, html: '<div class="cyber-line-loader"></div>' },
+            { id: 'matrix_rain', name: '🟢 Matrix Kodu', price: 200, html: '<div class="matrix-rain">0101</div>' },
+            { id: 'cosmic_portal', name: '🌌 Kozmik Portal', price: 250, html: '<div class="cosmic-portal"></div>' }
+        ];
+
+        const LOFI_TRACKS = [
+            { id: 'lofi_1', name: '🎵 Chill Beats', price: 0, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+            { id: 'lofi_2', name: '🌙 Night Vibes', price: 100, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
+            { id: 'lofi_3', name: '☕ Coffee Shop', price: 100, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
+            { id: 'lofi_4', name: '🌧️ Rainy Mood', price: 150, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+            { id: 'lofi_5', name: '🔥 Deep Focus', price: 150, url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' }
+        ];
+
+        const TEMPLATES = {
+            cpp_game: {
+                fileName: 'sayi_tahmin.cpp',
+                content: `#include <iostream>\n#include <cstdlib>\n#include <ctime>\nusing namespace std;\n\nint main() {\n    srand(time(0));\n    int gizliSayi = rand() % 100 + 1;\n    int tahmin, hak = 5;\n\n    cout << "1-100 arasinda bir sayi tuttum, tahmin et! (5 hakkin var)" << endl;\n\n    while (hak > 0) {\n        cout << "Tahminin: ";\n        cin >> tahmin;\n        if (tahmin == gizliSayi) {\n            cout << "Tebrikler, bildin!" << endl;\n            break;\n        } else if (tahmin < gizliSayi) {\n            cout << "Daha buyuk bir sayi dene." << endl;\n        } else {\n            cout << "Daha kucuk bir sayi dene." << endl;\n        }\n        hak--;\n    }\n    if (hak == 0) cout << "Hakkin bitti! Sayi: " << gizliSayi << endl;\n    return 0;\n}`
+            },
+            web_starter: {
+                fileName: 'starter.html',
+                content: `<!DOCTYPE html>\n<html lang="tr">\n<head>\n  <meta charset="UTF-8">\n  <title>Web Starter</title>\n  <style>\n    body { font-family: sans-serif; text-align: center; margin-top: 60px; }\n    h1 { color: #007acc; }\n  </style>\n</head>\n<body>\n  <h1>Merhaba NovaCodex!</h1>\n  <p>Web projene buradan basla.</p>\n</body>\n</html>`
+            },
+            python_starter: {
+                fileName: 'starter.py',
+                content: `# NovaCodex Python Starter\n\nisim = input("Adin ne? ")\nprint(f"Merhaba, {isim}! NovaCodex'e hos geldin.")`
+            }
+        };
+
+        let editorSettings = JSON.parse(localStorage.getItem('fivigo_editor_settings')) || {
+            fontSize: 14, fontFamily: "'Fira Code', monospace", minimap: true,
+            lineNumbers: true, wordWrap: false, autoIndent: true, monacoTheme: 'vs-dark'
+        };
+        function saveEditorSettings() {
+            localStorage.setItem('fivigo_editor_settings', JSON.stringify(editorSettings));
+        }
+
+        let projects = JSON.parse(localStorage.getItem('fivigo_projects_v5')) || {
+            'Örnek Proje': {
+                'main.cpp': `#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << "NovaCodex v1.0 IDE'ye Hoş Geldiniz!" << endl;\n    cout << "FiviGO Studio & Yusuf Alperen İZİ" << endl;\n    return 0;\n}`
+            }
+        };
+
+        let currentProjectName = Object.keys(projects)[0] || 'Örnek Proje';
+        let files = projects[currentProjectName] || {};
+        let activeFile = Object.keys(files)[0] || 'main.cpp';
+
+        window.addEventListener('DOMContentLoaded', () => {
+            applySplashScreen(activeSplashId);
+            applyStudioTheme(activeThemeId);
+            applyCursor(activeCursorId);
+            renderChangelog();
+            initMonaco();
+
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                if (splash) {
+                    splash.style.opacity = '0';
+                    setTimeout(() => splash.style.visibility = 'hidden', 800);
+                }
+                showNotification('🚀', 'NovaCodex v1.0', 'FiviGO Studio gururla sunar!');
+            }, 1800);
+
+            updateCoinUI();
+            syncSettingsUI();
+            renderProjectsGrid();
+            updateDailyRewardUI();
+        });
+
+        function syncSettingsUI() {
+            const fs = document.getElementById('setting-fontsize'); if (fs) fs.value = editorSettings.fontSize;
+            const ff = document.getElementById('setting-fontfamily'); if (ff) ff.value = editorSettings.fontFamily;
+            const mt = document.getElementById('monaco-theme-select'); if (mt) mt.value = editorSettings.monacoTheme;
+            const mm = document.getElementById('setting-minimap'); if (mm) mm.checked = editorSettings.minimap;
+            const ln = document.getElementById('setting-linenumbers'); if (ln) ln.checked = editorSettings.lineNumbers;
+            const ww = document.getElementById('setting-wordwrap'); if (ww) ww.checked = editorSettings.wordWrap;
+            const ai = document.getElementById('setting-autoindent'); if (ai) ai.checked = editorSettings.autoIndent;
+            const badge = document.getElementById('theme-mode-badge'); if (badge) badge.textContent = isDark ? '🌙 Gece Modu' : '☀️ Gündüz Modu';
+        }
+
+        function initMonaco() {
+            require.config({ paths: { vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs' } });
+            require(['vs/editor/editor.main'], function () {
+                editor = monaco.editor.create(document.getElementById('editor-container'), {
+                    value: files[activeFile] || '',
+                    language: getLanguageByFileName(activeFile),
+                    theme: editorSettings.monacoTheme,
+                    automaticLayout: true,
+                    fontSize: editorSettings.fontSize,
+                    fontFamily: editorSettings.fontFamily,
+                    minimap: { enabled: editorSettings.minimap },
+                    lineNumbers: editorSettings.lineNumbers ? 'on' : 'off',
+                    wordWrap: editorSettings.wordWrap ? 'on' : 'off',
+                    autoIndent: editorSettings.autoIndent ? 'full' : 'none'
+                });
+
+                editor.onDidChangeModelContent(() => {
+                    files[activeFile] = editor.getValue();
+                    projects[currentProjectName] = files;
+                    localStorage.setItem('fivigo_projects_v5', JSON.stringify(projects));
+                    updateEditorStats();
+                });
+
+                renderTabs();
+                updateEditorStats();
+            });
+        }
+
+        function getLanguageByFileName(filename) {
+            if (filename.endsWith('.cpp')) return 'cpp';
+            if (filename.endsWith('.py')) return 'python';
+            if (filename.endsWith('.html')) return 'html';
+            if (filename.endsWith('.css')) return 'css';
+            if (filename.endsWith('.js')) return 'javascript';
+            return 'plaintext';
+        }
+
+        function renderChangelog() {
+            const container = document.getElementById('changelog-container');
+            if (!container) return;
+            container.innerHTML = '';
+            CHANGELOG.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'changelog-item';
+                el.innerHTML = `
+                    <div class="changelog-item-header">
+                        <span class="changelog-version">${item.version}</span>
+                        <span class="changelog-date">${item.date}</span>
+                    </div>
+                    <div class="changelog-desc">${item.desc}</div>`;
+                container.appendChild(el);
+            });
+        }
+
+        function showNotification(icon, title, text) {
+            const notif = document.getElementById('fivi-notif');
+            document.getElementById('fivi-notif-icon').textContent = icon;
+            document.getElementById('fivi-notif-title').textContent = title;
+            document.getElementById('fivi-notif-text').textContent = text;
+            notif.classList.add('show');
+            setTimeout(() => notif.classList.remove('show'), 3500);
+        }
+
+        function updateCoinUI() {
+            const coinElem = document.getElementById('user-kodcoin');
+            if (coinElem) coinElem.textContent = kodcoin;
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+
+        function toggleSettingsPanel() {
+            document.getElementById('settings-panel').classList.toggle('open');
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModals() {
+            document.querySelectorAll('.modal-overlay').forEach(m => m.style.display = 'none');
+            if (adTabOpened && adCountdownInterval) {
+                clearInterval(adCountdownInterval);
+                adTabOpened = false;
+                const idleBox = document.getElementById('ad-earn-idle');
+                const adWrap = document.getElementById('ad-banner-wrap');
+                const btn = document.getElementById('earn-ad-btn');
+                const container = document.getElementById('ad-banner-container');
+                if (container) container.innerHTML = '';
+                if (adWrap) adWrap.style.display = 'none';
+                if (idleBox) idleBox.style.display = 'block';
+                if (btn) {
+                    btn.disabled = false;
+                    btn.style.opacity = '1';
+                    btn.style.cursor = 'pointer';
+                    btn.textContent = '🚀 Reklamı Göster & 5 KC Kazan';
+                }
+            }
+        }
+
+        function applyStudioTheme(themeId) {
+            activeThemeId = themeId;
+            localStorage.setItem('fivigo_active_theme', activeThemeId);
+            const themeObj = STUDIO_THEMES.find(t => t.id === themeId) || STUDIO_THEMES[0];
+            document.body.className = themeObj.className;
+            if (!isDark) document.body.classList.add('light-theme');
+        }
+
+        function applySplashScreen(splashId) {
+            activeSplashId = splashId;
+            localStorage.setItem('fivigo_active_splash', activeSplashId);
+            const splashObj = SPLASH_SCREENS.find(s => s.id === splashId) || SPLASH_SCREENS[0];
+            const elem = document.getElementById('splash-anim-wrapper');
+            if (elem) elem.innerHTML = splashObj.html;
+        }
+
+        function applyCursor(cursorId) {
+            activeCursorId = cursorId;
+            localStorage.setItem('fivigo_active_cursor', activeCursorId);
+            const cursorObj = CURSORS.find(c => c.id === cursorId) || CURSORS[0];
+            document.body.style.cursor = `url("${cursorObj.svg}"), auto`;
+        }
+
+        function renderTabs() {
+            const tabsList = document.getElementById('tabs-list');
+            if (!tabsList) return;
+            tabsList.innerHTML = '';
+            Object.keys(files).forEach(fileName => {
+                const tab = document.createElement('div');
+                tab.className = `tab ${fileName === activeFile ? 'active' : ''}`;
+                tab.onclick = () => switchFile(fileName);
+                tab.innerHTML = `<span class="tab-title">${fileName}</span><span class="close-tab" onclick="event.stopPropagation(); closeFile('${fileName}')">×</span>`;
+                tabsList.appendChild(tab);
+            });
+        }
+
+        function switchFile(fileName) {
+            activeFile = fileName;
+            if (editor) {
+                editor.setValue(files[fileName] || '');
+                monaco.editor.setModelLanguage(editor.getModel(), getLanguageByFileName(fileName));
+            }
+            renderTabs();
+            renderExplorer();
+        }
+
+        function updateEditorStats() {
+            if (!editor) return;
+            const content = editor.getValue();
+            const lines = content.split('\n').length;
+            const chars = content.length;
+            const statsElem = document.getElementById('footer-stats');
+            if (statsElem) statsElem.textContent = `Satır: ${lines} | Karakter: ${chars}`;
+        }
+
+        function runCode() {
+            const outputFrame = document.getElementById('preview-window');
+            const code = editor.getValue();
+            const lang = getLanguageByFileName(activeFile);
+
+            if (lang === 'html') {
+                outputFrame.srcdoc = code;
+                showNotification('▶', 'Çalıştırıldı', 'HTML canlı önizleme güncellendi.');
+            } else {
+                const logs = document.getElementById('console-logs');
+                logs.innerHTML += `<div class="log-item log-info">[Çıktı - ${activeFile}]:</div>`;
+                logs.innerHTML += `<div class="log-item">${code.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</div>`;
+                logs.scrollTop = logs.scrollHeight;
+                showNotification('💻', 'Konsol Çıktısı', 'Kod konsola yazdırıldı.');
+            }
+        }
+
+        function clearConsole() {
+            document.getElementById('console-logs').innerHTML = '<div class="log-item log-system">Konsol temizlendi.</div>';
+        }
+
+        function changeMode(mode) {
+            const home = document.getElementById('home-view');
+            const left = document.getElementById('left-panel');
+            const right = document.getElementById('right-panel');
+            const divider = document.getElementById('panel-divider');
+            const navDash = document.getElementById('nav-dashboard');
+            const navEdit = document.getElementById('nav-editor');
+            const tabsBar = document.getElementById('tabs-bar-wrapper');
+
+            if (mode === 'dashboard') {
+                home.style.display = 'flex';
+                renderProjectsGrid();
+                left.style.display = 'none';
+                right.style.display = 'none';
+                divider.style.display = 'none';
+                tabsBar.style.display = 'none';
+                navDash.classList.add('active');
+                navEdit.classList.remove('active');
+            } else {
+                home.style.display = 'none';
+                left.style.display = 'flex';
+                right.style.display = 'flex';
+                divider.style.display = 'block';
+                tabsBar.style.display = 'flex';
+                navDash.classList.remove('active');
+                navEdit.classList.add('active');
+            }
+            toggleSidebar();
+        }
+
+        // ---------- Önizleme Boyutu ----------
+        function setPreviewSize(size) {
+            document.getElementById('preview-window').style.width = size;
+        }
+
+        // ---------- Dosya Gezgini ----------
+        function toggleExplorer() {
+            const panel = document.getElementById('explorer-panel');
+            panel.classList.toggle('open');
+            if (panel.classList.contains('open')) renderExplorer();
+        }
+
+        function renderExplorer() {
+            const list = document.getElementById('explorer-list');
+            if (!list) return;
+            list.innerHTML = '';
+            Object.keys(files).forEach(fileName => {
+                const item = document.createElement('div');
+                item.className = `explorer-file ${fileName === activeFile ? 'active' : ''}`;
+                item.onclick = () => switchFile(fileName);
+                item.innerHTML = `<span>📄</span><span>${fileName}</span>`;
+                list.appendChild(item);
+            });
+        }
+
+        // ---------- Sanal Terminal ----------
+        function toggleTerminal() {
+            document.getElementById('terminal-panel').classList.toggle('open');
+        }
+
+        function handleTerminal(event) {
+            if (event.key !== 'Enter') return;
+            const input = event.target;
+            const cmd = input.value.trim();
+            const output = document.getElementById('terminal-output');
+            output.innerHTML += `\n<span style="color:#00d2ff;">novacodex&gt;</span> ${cmd}`;
+
+            if (cmd === 'clear') {
+                output.innerHTML = '';
+            } else if (cmd === 'help') {
+                output.innerHTML += `\nKullanılabilir komutlar: help, clear, date, files, whoami, run`;
+            } else if (cmd === 'date') {
+                output.innerHTML += `\n${new Date().toLocaleString('tr-TR')}`;
+            } else if (cmd === 'files') {
+                output.innerHTML += `\n${Object.keys(files).join('  ')}`;
+            } else if (cmd === 'whoami') {
+                output.innerHTML += `\nNovaCodex Kullanıcısı`;
+            } else if (cmd === 'run') {
+                runCode();
+                output.innerHTML += `\nKod çalıştırıldı.`;
+            } else if (cmd.toLowerCase() === 'ejderha' || cmd.toLowerCase() === 'dragon') {
+                if (!ownedCursors.includes('secret_dragon')) {
+                    ownedCursors.push('secret_dragon');
+                    localStorage.setItem('fivigo_owned_cursors', JSON.stringify(ownedCursors));
+                    output.innerHTML += `\n🐲 Gizli imleç bulundu! Market > İmleçler bölümünden kullanabilirsin.`;
+                    showNotification('🐲', 'Gizli Ödül!', 'Ejderha imleci kilidi açıldı!');
+                } else {
+                    output.innerHTML += `\nBu gizli ödülü zaten buldun.`;
+                }
+            } else if (cmd === '') {
+                // boş komut, bir şey yapma
+            } else {
+                output.innerHTML += `\nKomut bulunamadı: ${cmd}`;
+            }
+            input.value = '';
+            output.scrollTop = output.scrollHeight;
+        }
+
+        // ---------- Proje Yönetimi ----------
+        function openNewProjectModal() {
+            document.getElementById('project-name-input').value = '';
+            openModal('project-modal');
+        }
+
+        function createNewProject() {
+            const input = document.getElementById('project-name-input');
+            const name = input.value.trim();
+            if (!name) { showNotification('⚠️', 'Hata', 'Lütfen bir proje adı girin.'); return; }
+            if (projects[name]) { showNotification('⚠️', 'Hata', 'Bu isimde bir proje zaten var.'); return; }
+            projects[name] = { 'main.cpp': `#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << "Merhaba Dunya!" << endl;\n    return 0;\n}` };
+            localStorage.setItem('fivigo_projects_v5', JSON.stringify(projects));
+            openProject(name);
+            closeModals();
+            showNotification('✅', 'Proje Oluşturuldu', `"${name}" projesi başarıyla oluşturuldu.`);
+        }
+
+        function openProject(name) {
+            if (!projects[name]) return;
+            currentProjectName = name;
+            files = projects[name];
+            activeFile = Object.keys(files)[0];
+            if (editor) {
+                switchFile(activeFile);
+            } else {
+                renderTabs();
+            }
+            changeMode('editor');
+        }
+
+        function renderProjectsGrid() {
+            const grid = document.getElementById('project-list-grid');
+            if (!grid) return;
+            grid.innerHTML = '';
+            Object.keys(projects).forEach(name => {
+                const fileCount = Object.keys(projects[name]).length;
+                const card = document.createElement('div');
+                card.className = 'project-card';
+                card.innerHTML = `
+                    <div>
+                        <strong style="font-size:1rem;">📁 ${name}</strong>
+                        <p style="color:var(--text-muted); font-size:0.8rem; margin-top:4px;">${fileCount} dosya</p>
+                    </div>
+                    <div style="display:flex; gap:8px;">
+                        <button onclick="openProject('${name}')" style="flex:1;">📂 Aç</button>
+                        <button onclick="deleteProject('${name}')" style="background:#c0392b;">🗑️</button>
+                    </div>`;
+                grid.appendChild(card);
+            });
+        }
+
+        function deleteProject(name) {
+            if (Object.keys(projects).length <= 1) { showNotification('⚠️', 'Hata', 'Son projeyi silemezsiniz.'); return; }
+            if (!confirm(`"${name}" projesini silmek istediğinize emin misiniz?`)) return;
+            delete projects[name];
+            localStorage.setItem('fivigo_projects_v5', JSON.stringify(projects));
+            if (currentProjectName === name) openProject(Object.keys(projects)[0]);
+            renderProjectsGrid();
+            showNotification('🗑️', 'Silindi', `"${name}" projesi silindi.`);
+        }
+
+        // ---------- Dosya Yönetimi ----------
+        function openNewTabModal() {
+            document.getElementById('file-name-input').value = '';
+            openModal('file-modal');
+        }
+
+        function createNewFile() {
+            const input = document.getElementById('file-name-input');
+            const name = input.value.trim();
+            if (!name) { showNotification('⚠️', 'Hata', 'Lütfen bir dosya adı girin.'); return; }
+            if (files[name] !== undefined) { showNotification('⚠️', 'Hata', 'Bu isimde bir dosya zaten var.'); return; }
+            files[name] = '';
+            projects[currentProjectName] = files;
+            localStorage.setItem('fivigo_projects_v5', JSON.stringify(projects));
+            activeFile = name;
+            if (editor) switchFile(name); else renderTabs();
+            closeModals();
+            showNotification('✅', 'Dosya Eklendi', `"${name}" oluşturuldu.`);
+        }
+
+        function closeFile(fileName) {
+            const keys = Object.keys(files);
+            if (keys.length <= 1) { showNotification('⚠️', 'Hata', 'Son dosyayı kapatamazsınız.'); return; }
+            delete files[fileName];
+            projects[currentProjectName] = files;
+            localStorage.setItem('fivigo_projects_v5', JSON.stringify(projects));
+            if (activeFile === fileName) {
+                activeFile = Object.keys(files)[0];
+                if (editor) switchFile(activeFile); else renderTabs();
+            } else {
+                renderTabs();
+                renderExplorer();
+            }
+        }
+
+        // ---------- Kod Şablonları ----------
+        function loadTemplate(templateId) {
+            const tpl = TEMPLATES[templateId];
+            if (!tpl) return;
+            let fileName = tpl.fileName;
+            let counter = 1;
+            while (files[fileName] !== undefined) {
+                fileName = tpl.fileName.replace(/(\.[a-z]+)$/, `_${counter}$1`);
+                counter++;
+            }
+            files[fileName] = tpl.content;
+            projects[currentProjectName] = files;
+            localStorage.setItem('fivigo_projects_v5', JSON.stringify(projects));
+            activeFile = fileName;
+            closeModals();
+            changeMode('editor');
+            if (editor) switchFile(fileName); else renderTabs();
+            showNotification('⚡', 'Şablon Yüklendi', `"${fileName}" projenize eklendi.`);
+        }
+
+        // ---------- İçe / Dışa Aktarma ----------
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                files[file.name] = e.target.result;
+                projects[currentProjectName] = files;
+                localStorage.setItem('fivigo_projects_v5', JSON.stringify(projects));
+                activeFile = file.name;
+                closeModals();
+                if (editor) switchFile(file.name); else renderTabs();
+                showNotification('📥', 'Dosya Yüklendi', `"${file.name}" projeye eklendi.`);
+            };
+            reader.readAsText(file);
+            event.target.value = '';
+        }
+
+        function exportProjectZip() {
+            if (typeof JSZip === 'undefined') { showNotification('⚠️', 'Hata', 'ZIP kütüphanesi yüklenemedi.'); return; }
+            const zip = new JSZip();
+            Object.entries(files).forEach(([name, content]) => zip.file(name, content));
+            zip.generateAsync({ type: 'blob' }).then(blob => {
+                saveAs(blob, `${currentProjectName}.zip`);
+                showNotification('📦', 'İndirildi', 'Proje ZIP olarak indirildi.');
+            });
+        }
+
+        // ---------- İstatistikler ----------
+        function openStatsModal() {
+            const container = document.getElementById('stats-content');
+            const totalProjects = Object.keys(projects).length;
+            const totalFiles = Object.values(projects).reduce((acc, f) => acc + Object.keys(f).length, 0);
+            if (container) {
+                container.innerHTML = `
+                    <div>📁 Toplam Proje: <strong>${totalProjects}</strong></div>
+                    <div>📄 Toplam Dosya: <strong>${totalFiles}</strong></div>
+                    <div>🪙 KodCoin Bakiyesi: <strong>${kodcoin}</strong></div>
+                    <div>🖱️ Sahip Olunan İmleç: <strong>${ownedCursors.length}</strong></div>
+                    <div>🎨 Sahip Olunan Tema: <strong>${ownedThemes.length}</strong></div>
+                    <div>🚀 Sahip Olunan Açılış: <strong>${ownedSplash.length}</strong></div>
+                `;
+            }
+            openModal('stats-modal');
+        }
+
+        // ---------- Market ----------
+        let activeMarketCategory = 'cursors';
+
+        function getMarketCategoryInfo(category) {
+            switch (category) {
+                case 'cursors': return { data: CURSORS, owned: ownedCursors, active: activeCursorId, ownedKey: 'fivigo_owned_cursors' };
+                case 'themes': return { data: STUDIO_THEMES, owned: ownedThemes, active: activeThemeId, ownedKey: 'fivigo_owned_themes' };
+                case 'splash': return { data: SPLASH_SCREENS, owned: ownedSplash, active: activeSplashId, ownedKey: 'fivigo_owned_splash' };
+                case 'lofi': return { data: LOFI_TRACKS, owned: ownedLofi, active: activeLofiId, ownedKey: 'fivigo_owned_lofi' };
+            }
+        }
+
+        function openMarketModal() {
+            openModal('market-modal');
+            renderMarketContent(activeMarketCategory);
+        }
+
+        function switchMarketCategory(category, btnEl) {
+            activeMarketCategory = category;
+            document.querySelectorAll('.market-tab-btn').forEach(b => b.classList.remove('active'));
+            if (btnEl) btnEl.classList.add('active');
+            renderMarketContent(category);
+        }
+
+        function renderMarketContent(category) {
+            const area = document.getElementById('market-content-area');
+            if (!area) return;
+            const info = getMarketCategoryInfo(category);
+            const grid = document.createElement('div');
+            grid.style.display = 'grid';
+            grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(180px, 1fr))';
+            grid.style.gap = '12px';
+            info.data.forEach(item => {
+                if (item.secret && !info.owned.includes(item.id)) return;
+                const owned = info.owned.includes(item.id);
+                const isActive = info.active === item.id;
+                const card = document.createElement('div');
+                card.className = `cursor-card ${isActive ? 'equipped' : ''}`;
+                let actionHtml;
+                if (isActive) {
+                    actionHtml = `<button disabled style="background:#2ecc71; opacity:0.8;">✓ Aktif</button>`;
+                } else if (owned) {
+                    actionHtml = `<button onclick="purchaseMarketItem('${category}','${item.id}')">Kullan</button>`;
+                } else {
+                    actionHtml = `<button onclick="purchaseMarketItem('${category}','${item.id}')">🪙 ${item.price} KC - Satın Al</button>`;
+                }
+                card.innerHTML = `<strong>${item.name}</strong><div style="font-size:0.75rem;color:var(--text-muted);">${owned ? 'Sahip olundu' : (item.price === 0 ? 'Ücretsiz' : item.price + ' KodCoin')}</div>${actionHtml}`;
+                grid.appendChild(card);
+            });
+            area.innerHTML = '';
+            area.appendChild(grid);
+        }
+
+        function purchaseMarketItem(category, id) {
+            const info = getMarketCategoryInfo(category);
+            const item = info.data.find(i => i.id === id);
+            if (!item) return;
+            const owned = info.owned.includes(id);
+            if (!owned) {
+                if (kodcoin < item.price) {
+                    showNotification('⚠️', 'Yetersiz Bakiye', 'Bu eşyayı almak için yeterli KodCoin\'iniz yok.');
+                    return;
+                }
+                kodcoin -= item.price;
+                localStorage.setItem('fivigo_kodcoin', kodcoin);
+                info.owned.push(id);
+                localStorage.setItem(info.ownedKey, JSON.stringify(info.owned));
+                updateCoinUI();
+                showNotification('🛒', 'Satın Alındı', `"${item.name}" satın alındı!`);
+            }
+            if (category === 'cursors') applyCursor(id);
+            else if (category === 'themes') applyStudioTheme(id);
+            else if (category === 'splash') applySplashScreen(id);
+            else if (category === 'lofi') applyLofiTrack(id);
+            renderMarketContent(category);
+        }
+
+        // ---------- Lo-fi Müzik Çalar ----------
+        function applyLofiTrack(id) {
+            activeLofiId = id;
+            localStorage.setItem('fivigo_active_lofi', id);
+            const track = LOFI_TRACKS.find(t => t.id === id);
+            if (!track) return;
+            const player = document.getElementById('lofi-player');
+            player.src = track.url;
+            player.play().catch(() => {});
+            isLofiPlaying = true;
+            document.getElementById('lofi-status-badge').textContent = 'Çalıyor: ' + track.name;
+            document.getElementById('lofi-btn').textContent = '⏸️ Durdur';
+        }
+
+        function playCustomMusic() {
+            const urlInput = document.getElementById('custom-music-url');
+            const url = urlInput.value.trim();
+            const player = document.getElementById('lofi-player');
+            const btn = document.getElementById('lofi-btn');
+            const badge = document.getElementById('lofi-status-badge');
+            const ytContainer = document.getElementById('youtube-lofi-container');
+
+            if (isLofiPlaying) {
+                player.pause();
+                ytContainer.innerHTML = '';
+                isLofiPlaying = false;
+                badge.textContent = 'Kapalı';
+                btn.textContent = '▶️ Şarkıyı Oynat';
+                return;
+            }
+
+            if (!url) { showNotification('⚠️', 'Hata', 'Lütfen bir müzik linki girin.'); return; }
+
+            const ytMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+            if (ytMatch) {
+                ytContainer.innerHTML = `<iframe width="1" height="1" src="https://www.youtube.com/embed/${ytMatch[1]}?autoplay=1" allow="autoplay" frameborder="0"></iframe>`;
+                badge.textContent = 'Çalıyor (YouTube)';
+            } else {
+                player.src = url;
+                player.play().catch(() => showNotification('⚠️', 'Hata', 'Ses dosyası oynatılamadı.'));
+                badge.textContent = 'Çalıyor';
+            }
+            isLofiPlaying = true;
+            btn.textContent = '⏸️ Durdur';
+        }
+
+        function setVolume(value) {
+            document.getElementById('lofi-player').volume = value;
+        }
+
+        // ---------- Tema / Gece-Gündüz Modu ----------
+        function toggleTheme() {
+            isDark = !isDark;
+            localStorage.setItem('fivigo_dark_mode', isDark);
+            applyStudioTheme(activeThemeId);
+            const badge = document.getElementById('theme-mode-badge');
+            if (badge) badge.textContent = isDark ? '🌙 Gece Modu' : '☀️ Gündüz Modu';
+        }
+
+        // ---------- Editör Ayarları ----------
+        function changeMonacoTheme(value) {
+            editorSettings.monacoTheme = value;
+            saveEditorSettings();
+            if (window.monaco) monaco.editor.setTheme(value);
+        }
+
+        function updateEditorFontSize(value) {
+            editorSettings.fontSize = parseInt(value) || 14;
+            saveEditorSettings();
+            if (editor) editor.updateOptions({ fontSize: editorSettings.fontSize });
+        }
+
+        function updateEditorFontFamily(value) {
+            editorSettings.fontFamily = value;
+            saveEditorSettings();
+            if (editor) editor.updateOptions({ fontFamily: value });
+        }
+
+        function toggleMinimap(checked) {
+            editorSettings.minimap = checked;
+            saveEditorSettings();
+            if (editor) editor.updateOptions({ minimap: { enabled: checked } });
+        }
+
+        function toggleLineNumbers(checked) {
+            editorSettings.lineNumbers = checked;
+            saveEditorSettings();
+            if (editor) editor.updateOptions({ lineNumbers: checked ? 'on' : 'off' });
+        }
+
+        function toggleWordWrap(checked) {
+            editorSettings.wordWrap = checked;
+            saveEditorSettings();
+            if (editor) editor.updateOptions({ wordWrap: checked ? 'on' : 'off' });
+        }
+
+        function toggleAutoIndent(checked) {
+            editorSettings.autoIndent = checked;
+            saveEditorSettings();
+            if (editor) editor.updateOptions({ autoIndent: checked ? 'full' : 'none' });
+        }
+
+        function formatCode() {
+            if (!editor) return;
+            const action = editor.getAction('editor.action.formatDocument');
+            if (action) {
+                action.run().then(() => showNotification('✨', 'Biçimlendirildi', 'Kod başarıyla biçimlendirildi.'))
+                    .catch(() => showNotification('⚠️', 'Uyarı', 'Bu dil için biçimlendirme desteklenmiyor.'));
+            } else {
+                showNotification('⚠️', 'Uyarı', 'Biçimlendirme kullanılamıyor.');
+            }
+        }
+
+        function resetAllData() {
+            if (!confirm('Tüm veriler (projeler, ayarlar, KodCoin, market eşyaları) kalıcı olarak silinecek. Emin misiniz?')) return;
+            localStorage.clear();
+            location.reload();
+        }
+
+        // ---------- Günlük Ödül & Reklam ile Kazanma ----------
+        function claimDailyReward() {
+            const now = Date.now();
+            const oneDay = 24 * 60 * 60 * 1000;
+            if (now - lastDailyClaim < oneDay) {
+                updateDailyRewardUI();
+                showNotification('⏳', 'Zaten Alındı', 'Ödülünüzü zaten aldınız, kalan süre butonun altında görünüyor.');
+                return;
+            }
+            kodcoin += 50;
+            lastDailyClaim = now;
+            localStorage.setItem('fivigo_kodcoin', kodcoin);
+            localStorage.setItem('fivigo_last_daily', lastDailyClaim);
+            updateCoinUI();
+            updateDailyRewardUI();
+            showNotification('🎁', 'Günlük Ödül', '+50 KodCoin kazandınız!');
+        }
+
+        function updateDailyRewardUI() {
+            const btn = document.getElementById('daily-reward-btn');
+            const timerEl = document.getElementById('daily-reward-timer');
+            if (!btn || !timerEl) return;
+
+            const now = Date.now();
+            const oneDay = 24 * 60 * 60 * 1000;
+            const remaining = oneDay - (now - lastDailyClaim);
+
+            if (remaining > 0) {
+                const hours = Math.floor(remaining / (60 * 60 * 1000));
+                const minutes = Math.floor((remaining % (60 * 60 * 1000)) / (60 * 1000));
+                const seconds = Math.floor((remaining % (60 * 1000)) / 1000);
+                btn.disabled = true;
+                btn.style.opacity = '0.5';
+                btn.style.cursor = 'not-allowed';
+                btn.textContent = '🎁 Ödül Alındı';
+                timerEl.style.display = 'block';
+                timerEl.textContent = `⏳ ${hours} sa ${minutes} dk ${seconds} sn sonra tekrar alınabilir`;
+            } else {
+                btn.disabled = false;
+                btn.style.opacity = '1';
+                btn.style.cursor = 'pointer';
+                btn.textContent = '🎁 Günlük Ödül (+50 KC)';
+                timerEl.style.display = 'none';
+            }
+        }
+
+        setInterval(updateDailyRewardUI, 1000);
+
+        // ---------- Yenilikler Modalı ----------
+        function openWhatsNewModal() {
+            openModal('whatsnew-modal');
+        }
+
+        // ---------- Reklam Banner (highrevenueformat) ile KodCoin Kazan ----------
+        let adCountdownInterval = null;
+
+        function executeAdAndEarn() {
+            if (adTabOpened) {
+                showNotification('⚠️', 'Bekleyin', 'Reklam zaten gösteriliyor, lütfen tamamlayın.');
+                return;
+            }
+            adTabOpened = true;
+
+            const idleBox = document.getElementById('ad-earn-idle');
+            const adWrap = document.getElementById('ad-banner-wrap');
+            const btn = document.getElementById('earn-ad-btn');
+            const countdownEl = document.getElementById('ad-countdown');
+            const container = document.getElementById('ad-banner-container');
+
+            idleBox.style.display = 'none';
+            adWrap.style.display = 'flex';
+            btn.disabled = true;
+            btn.style.opacity = '0.5';
+            btn.style.cursor = 'not-allowed';
+            btn.textContent = '⏳ Reklam gösteriliyor...';
+
+            // Reklam kodu document.write kullandığı için ana sayfayı bozmaması adına
+            // izole bir iframe içine yazılır.
+            container.innerHTML = '';
+            const adFrame = document.createElement('iframe');
+            adFrame.style.width = '160px';
+            adFrame.style.height = '300px';
+            adFrame.style.border = 'none';
+            adFrame.title = 'Sponsorlu Reklam';
+            container.appendChild(adFrame);
+
+            const frameDoc = adFrame.contentWindow.document;
+            frameDoc.open();
+            frameDoc.write(`<!DOCTYPE html><html><head><style>body{margin:0;padding:0;background:#000;}</style></head><body>
+                <script>
+                    atOptions = {
+                        'key' : 'fa539bcad8dab21fafc618809922af7d',
+                        'format' : 'iframe',
+                        'height' : 300,
+                        'width' : 160,
+                        'params' : {}
+                    };
+                <\/script>
+                <script src="https://www.highrevenueformat.com/fa539bcad8dab21fafc618809922af7d/invoke.js"><\/script>
+                </body></html>`);
+            frameDoc.close();
+
+            let remaining = 10;
+            countdownEl.textContent = remaining;
+            adCountdownInterval = setInterval(() => {
+                remaining--;
+                countdownEl.textContent = remaining;
+                if (remaining <= 0) {
+                    clearInterval(adCountdownInterval);
+                    finishAdReward();
+                }
+            }, 1000);
+        }
+
+        function finishAdReward() {
+            adTabOpened = false;
+            kodcoin += 5;
+            localStorage.setItem('fivigo_kodcoin', kodcoin);
+            updateCoinUI();
+            showNotification('🎉', 'Tebrikler!', '+5 KodCoin kazandınız!');
+
+            const idleBox = document.getElementById('ad-earn-idle');
+            const adWrap = document.getElementById('ad-banner-wrap');
+            const btn = document.getElementById('earn-ad-btn');
+            const container = document.getElementById('ad-banner-container');
+
+            container.innerHTML = '';
+            adWrap.style.display = 'none';
+            idleBox.style.display = 'block';
+            btn.disabled = false;
+            btn.style.opacity = '1';
+            btn.style.cursor = 'pointer';
+            btn.textContent = '🚀 Reklamı Göster & 5 KC Kazan';
+
+            closeModals();
+        }
+    </script>
+</body>
+</html>
